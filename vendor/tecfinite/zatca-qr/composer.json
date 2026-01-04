@@ -1,0 +1,58 @@
+{
+    "name": "tecfinite/zatca-qr",
+    "description": "This package takes ZATCA invoice data and generates ZATCA TLV string and Qr code image.",
+    "keywords": [
+        "tecfinite",
+        "zatca",
+        "zatca invoice",
+        "zatca qr"
+    ],
+    "homepage": "https://github.com/tecfinite/zatca-qr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tecfinite",
+            "homepage": "https://tecfinite.com",
+            "email": "info@tecfinite.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Abdurrahman Salem",
+            "homepage": "https://tecfinite.com",
+            "email": "a.hussalem@tecfinite.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "endroid/qr-code": "^4.7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^v3.13.2",
+        "pestphp/pest": "^v1.22.3",
+        "spatie/ray": "^1.36.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tecfinite\\ZatcaQr\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tecfinite\\ZatcaQr\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

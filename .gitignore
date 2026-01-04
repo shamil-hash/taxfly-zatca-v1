@@ -1,0 +1,7 @@
+node_modules/
+
+# ZATCA certificates and keys
+/storage/keys/*.pem
+/storage/keys/*.key
+/storage/keys/*.txt
+

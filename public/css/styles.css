@@ -1,0 +1,38 @@
+#content {
+    padding: 30px;
+}
+
+.select2-container .select2-choice {
+    height: 35px;
+    line-height: 35px;
+}
+
+ul.select2-results {
+    max-height: 100px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.pl-1 {
+    padding-left: 1rem !important;
+}
+
+.pr-2 {
+    padding-right: 2rem !important;
+}
+
+.custom-select-no-padding {
+    padding: 0;
+    height: 3rem;
+    line-height: 3rem;
+}

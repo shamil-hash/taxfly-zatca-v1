@@ -1,0 +1,20 @@
+--- /dev/null
++++ src/DocumentReference.php
+@@
++<?php
++namespace Saleh7\Zatca;
++
++/**
++ * Represents a Document Reference element in the ZATCA UBL schema.
++ */
++class DocumentReference
++{
++    public string $id;
++    public ?string $issueDate = null;
++
++    public function __construct(string $id, ?string $issueDate = null)
++    {
++        $this->id = $id;
++        $this->issueDate = $issueDate;
++    }
++}

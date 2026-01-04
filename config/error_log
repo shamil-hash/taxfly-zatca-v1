@@ -1,0 +1,8 @@
+[22-Jan-2025 02:59:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/dccart/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/dccart/public_html/config/database.php on line 18
+[23-Jan-2025 07:24:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/dccart/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/dccart/public_html/config/database.php on line 18

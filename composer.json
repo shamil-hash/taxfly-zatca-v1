@@ -1,0 +1,100 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "barryvdh/laravel-dompdf": "^2.1",
+        "dompdf/dompdf": "2.0.4",
+        "endroid/qr-code": "4.8",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.10",
+        "laravel/framework": "8.83.29",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "league/csv": "^9.8",
+        "maatwebsite/excel": "^3.1",
+        "milon/barcode": "^9.0",
+        "mpdf/mpdf": "^8.2",
+        "phenx/php-svg-lib": "0.5.2",
+        "phpseclib/phpseclib": "^3.0",
+        "picqer/php-barcode-generator": "^2.2",
+        "psr/http-message": "^2.0",
+        "psr/simple-cache": "1.0",
+        "rawilk/laravel-printing": "^3.0",
+        "robrichards/xmlseclibs": "^3.1",
+        "sabre/xml": "^4.0",
+        "saleh7/php-zatca-xml": "^1.0",
+        "setasign/fpdf": "^1.8",
+        "setasign/fpdi": "2.6.4",
+        "simplesoftwareio/simple-qrcode": "^4.2",
+        "stevebauman/location": "^6.5",
+        "symfony/mailer": "6.1",
+        "tecfinite/zatca-qr": "^1.0",
+        "yajra/laravel-datatables-oracle": "^9.21"
+    },
+    "require-dev": {
+        "cweagans/composer-patches": "^1.7",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^3.87",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^9.3.3",
+        "squizlabs/php_codesniffer": "^3.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Services/activityService.php",
+            "app/Services/ActivityWorksService.php",
+            "app/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

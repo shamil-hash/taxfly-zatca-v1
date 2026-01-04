@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"><ext:UBLExtensions><ext:UBLExtension><ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+  <ds:Reference><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>bfq2lElsdI+lsQHSu/frMDC+SNXn2uLej7gkyoFdwdg=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>MEUCIQDDc1iZ52Xo9KBl8PZtv26QHMeX0uHzbWmQZ4QWzikwUAIgYNZFe08wgSfcpDO1NEjHSUGEU4xQjPNLA5cKLrbLI14=</ds:SignatureValue>
+</ds:Signature></ext:ExtensionContent></ext:UBLExtension></ext:UBLExtensions>
+ <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:sa.gov.zatca:invoice</cbc:CustomizationID>
+ <cbc:ProfileID>reporting:1.0</cbc:ProfileID>
+ <cbc:ID>001000162</cbc:ID>
+ <cbc:UUID>361bba36-8f69-4c80-8a9a-3a3ece46db26</cbc:UUID>
+ <cbc:IssueDate>2025-09-11</cbc:IssueDate>
+ <cbc:IssueTime>19:24:20Z</cbc:IssueTime>
+ <cbc:InvoiceTypeCode name="02000000">388</cbc:InvoiceTypeCode>
+ <cbc:DocumentCurrencyCode>SAR</cbc:DocumentCurrencyCode>
+ <cbc:TaxCurrencyCode>SAR</cbc:TaxCurrencyCode>
+ <cac:AdditionalDocumentReference>
+  <cbc:ID/>
+ </cac:AdditionalDocumentReference>
+ <cac:AdditionalDocumentReference>
+  <cbc:ID/>
+ </cac:AdditionalDocumentReference>
+ <cac:AdditionalDocumentReference>
+  <cbc:ID>ICV</cbc:ID>
+  <cbc:UUID>162</cbc:UUID>
+ </cac:AdditionalDocumentReference>
+ <cac:AccountingSupplierParty>
+  <cac:Party>
+   <cac:PostalAddress>
+    <cbc:StreetName>Ood Metha, Abu Dhabi, UAE</cbc:StreetName>
+    <cbc:BuildingNumber>0N/A</cbc:BuildingNumber>
+    <cbc:CityName>Dubai</cbc:CityName>
+    <cbc:PostalZone>21324</cbc:PostalZone>
+    <cac:Country>
+     <cbc:IdentificationCode>SA</cbc:IdentificationCode>
+    </cac:Country>
+   </cac:PostalAddress>
+   <cac:PartyTaxScheme>
+    <cbc:CompanyID>312345678930003</cbc:CompanyID>
+    <cac:TaxScheme>
+     <cbc:ID>VAT</cbc:ID>
+    </cac:TaxScheme>
+   </cac:PartyTaxScheme>
+   <cac:PartyLegalEntity>
+    <cbc:RegistrationName>Netplex </cbc:RegistrationName>
+   </cac:PartyLegalEntity>
+  </cac:Party>
+ </cac:AccountingSupplierParty>
+ <cac:AccountingCustomerParty>
+  <cac:Party>
+   <cac:PostalAddress>
+    <cbc:StreetName>Not Provided</cbc:StreetName>
+    <cbc:CityName>Dubai</cbc:CityName>
+    <cbc:PostalZone>00000</cbc:PostalZone>
+    <cac:Country>
+     <cbc:IdentificationCode>SA</cbc:IdentificationCode>
+    </cac:Country>
+   </cac:PostalAddress>
+   <cac:PartyLegalEntity>
+    <cbc:RegistrationName>CUST-72718</cbc:RegistrationName>
+   </cac:PartyLegalEntity>
+  </cac:Party>
+ </cac:AccountingCustomerParty>
+ <cac:TaxTotal>
+  <cbc:TaxAmount currencyID="SAR">2.14</cbc:TaxAmount>
+  <cac:TaxSubtotal>
+   <cbc:TaxableAmount currencyID="SAR">42.86</cbc:TaxableAmount>
+   <cbc:TaxAmount currencyID="SAR">2.14</cbc:TaxAmount>
+   <cac:TaxCategory>
+    <cbc:ID schemeID="UN/ECE 5305" schemeAgencyID="6">S</cbc:ID>
+    <cbc:Percent>5</cbc:Percent>
+    <cac:TaxScheme>
+     <cbc:ID schemeID="UN/ECE 5153" schemeAgencyID="6">VAT</cbc:ID>
+    </cac:TaxScheme>
+   </cac:TaxCategory>
+  </cac:TaxSubtotal>
+ </cac:TaxTotal>
+ <cac:LegalMonetaryTotal>
+  <cbc:LineExtensionAmount currencyID="SAR">42.86</cbc:LineExtensionAmount>
+  <cbc:TaxExclusiveAmount currencyID="SAR">42.86</cbc:TaxExclusiveAmount>
+  <cbc:TaxInclusiveAmount currencyID="SAR">45.00</cbc:TaxInclusiveAmount>
+  <cbc:AllowanceTotalAmount currencyID="SAR">0.00</cbc:AllowanceTotalAmount>
+  <cbc:ChargeTotalAmount currencyID="SAR">0.00</cbc:ChargeTotalAmount>
+  <cbc:PrepaidAmount currencyID="SAR">0.00</cbc:PrepaidAmount>
+  <cbc:PayableAmount currencyID="SAR">45.00</cbc:PayableAmount>
+ </cac:LegalMonetaryTotal>
+ <cac:InvoiceLine>
+  <cbc:ID>LINE1</cbc:ID>
+  <cbc:InvoicedQuantity unitCode="MON">1.000000</cbc:InvoicedQuantity>
+  <cbc:LineExtensionAmount currencyID="SAR">14.29</cbc:LineExtensionAmount>
+  <cac:Item>
+   <cbc:Name>Apple</cbc:Name>
+   <cac:ClassifiedTaxCategory>
+    <cbc:ID>S</cbc:ID>
+    <cbc:Percent>5.00</cbc:Percent>
+    <cac:TaxScheme>
+     <cbc:ID>VAT</cbc:ID>
+    </cac:TaxScheme>
+   </cac:ClassifiedTaxCategory>
+  </cac:Item>
+  <cac:Price>
+   <cbc:PriceAmount currencyID="SAR">14.2900</cbc:PriceAmount>
+   <cbc:BaseQuantity unitCode="PCE">1.0000</cbc:BaseQuantity>
+  </cac:Price>
+ </cac:InvoiceLine>
+ <cac:InvoiceLine>
+  <cbc:ID>LINE2</cbc:ID>
+  <cbc:InvoicedQuantity unitCode="MON">1.000000</cbc:InvoicedQuantity>
+  <cbc:LineExtensionAmount currencyID="SAR">16.19</cbc:LineExtensionAmount>
+  <cac:Item>
+   <cbc:Name>Orange</cbc:Name>
+   <cac:ClassifiedTaxCategory>
+    <cbc:ID>S</cbc:ID>
+    <cbc:Percent>5.00</cbc:Percent>
+    <cac:TaxScheme>
+     <cbc:ID>VAT</cbc:ID>
+    </cac:TaxScheme>
+   </cac:ClassifiedTaxCategory>
+  </cac:Item>
+  <cac:Price>
+   <cbc:PriceAmount currencyID="SAR">16.1900</cbc:PriceAmount>
+   <cbc:BaseQuantity unitCode="PCE">1.0000</cbc:BaseQuantity>
+  </cac:Price>
+ </cac:InvoiceLine>
+ <cac:InvoiceLine>
+  <cbc:ID>LINE3</cbc:ID>
+  <cbc:InvoicedQuantity unitCode="MON">1.000000</cbc:InvoicedQuantity>
+  <cbc:LineExtensionAmount currencyID="SAR">12.38</cbc:LineExtensionAmount>
+  <cac:Item>
+   <cbc:Name>Banana</cbc:Name>
+   <cac:ClassifiedTaxCategory>
+    <cbc:ID>S</cbc:ID>
+    <cbc:Percent>5.00</cbc:Percent>
+    <cac:TaxScheme>
+     <cbc:ID>VAT</cbc:ID>
+    </cac:TaxScheme>
+   </cac:ClassifiedTaxCategory>
+  </cac:Item>
+  <cac:Price>
+   <cbc:PriceAmount currencyID="SAR">12.3800</cbc:PriceAmount>
+   <cbc:BaseQuantity unitCode="PCE">1.0000</cbc:BaseQuantity>
+  </cac:Price>
+ </cac:InvoiceLine>
+<cac:AdditionalDocumentReference><cbc:ID>QR</cbc:ID><cbc:DocumentTypeCode>QR</cbc:DocumentTypeCode><cbc:DocumentDescription>QR Code</cbc:DocumentDescription><cbc:DocumentIssueDate>2025-09-22</cbc:DocumentIssueDate><cbc:DocumentIssueTime>18:31:29Z</cbc:DocumentIssueTime><cbc:DocumentNumber>1</cbc:DocumentNumber><cbc:DocumentURL>image/png;base64,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</cbc:DocumentURL></cac:AdditionalDocumentReference></Invoice>

@@ -1,0 +1,46 @@
+.hidden {
+    display: none;
+}
+
+.discount_row {
+    display: flex;
+    align-items: center;
+}
+
+.discount_row>div {
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label select {
+    width: 50px;
+}
+
+.input-group-discount {
+    display: flex;
+    align-items: center;
+}
+
+.group_dis input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: -4px;
+    width: 70px;
+}
+
+.group_dis label {
+    margin-right: 0;
+}
+
+.group_dis span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: -1px;
+}
